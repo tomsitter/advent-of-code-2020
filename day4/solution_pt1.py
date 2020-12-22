@@ -43,7 +43,13 @@ def parse_passport(passport):
 
 def is_valid_passport(passport):
     req_keys = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
-    return all(key in passport.keys() for key in req_keys)
+    is_valid = True
+    if all(key in passport.keys() for key in req_keys):
+        if 
+    else:
+        is_valid = False
+    
+    return is_valid
 
 if __name__ == "__main__":
     main()
