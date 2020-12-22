@@ -5,10 +5,10 @@ import itertools
 def main():
     """ 
     1. Read the input.txt file
-    2. Extract a single passport
-    3. Extract all fields from a passport into a dict
-    4. Add new key to passport if it has all the required keys
-    5. Count the # of passports that are valid
+    2. Extract a group of answers
+    3. Extract all unique answers from the group
+    4. Count how many unique answers appear in the group and add to total
+    5. Print the total
     """
     answers = []
     all_answered = 0
